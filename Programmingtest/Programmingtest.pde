@@ -11,7 +11,7 @@ flag flag10 = new flag(300, 500);
 
 void setup()
 {
-  size(500, 500);
+  size(800, 800);
 }
 
 class flag
@@ -43,6 +43,9 @@ class flag
     triangle(pos_x, pos_y, pos_x + 150, pos_y, pos_x + 150, pos_x + 40);
     fill(random(0, 255), random(0, 255), random(0, 255));
     triangle(pos_x, pos_y + 75, pos_x + 150, pos_y + 75, pos_x + 150, pos_x + 40);
+    
+    pos_x += random(-25, 25);
+    pos_y += random(-25, 25);
   }
 }
 
