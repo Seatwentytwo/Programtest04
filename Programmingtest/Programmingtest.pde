@@ -44,8 +44,11 @@ class flag
     fill(random(0, 255), random(0, 255), random(0, 255));
     triangle(pos_x, pos_y + 75, pos_x + 150, pos_y + 75, pos_x + 150, pos_x + 40);
     
-    pos_x += random(-25, 25);
-    pos_y += random(-25, 25);
+    pos_x += random(-20, 20);
+    pos_y += random(-20, 20);
+    
+    w += random(-10, 10);
+    h += random(-10, 10);
   }
 }
 
