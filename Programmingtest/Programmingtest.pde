@@ -12,10 +12,12 @@ flag flag10 = new flag(300, 500);
 void setup()
 {
   size(800, 800);
+  frameRate(60);
 }
 
 class flag
 {
+  
   public float w = width * 1.5;
   public float h = height * 0.75;
   
@@ -37,15 +39,17 @@ class flag
   
   void draw()
   {
-    fill(50, 75, 150);
+    fill(random(0, 255), random(0, 250), random(0, 255));
     rect(pos_x, pos_y, w, h);
+    fill(190, 120, 110);
+    circle(pos_x + 25, pos_y + 25, 20);
     fill(random(0, 255), random(0, 250), random(0, 255));
     triangle(pos_x, pos_y, pos_x + 150, pos_y, pos_x + 150, pos_x + 40);
     fill(random(0, 255), random(0, 255), random(0, 255));
     triangle(pos_x, pos_y + 75, pos_x + 150, pos_y + 75, pos_x + 150, pos_x + 40);
     
-    pos_x += random(-20, 20);
-    pos_y += random(-20, 20);
+    pos_x += random(-15, 15);
+    pos_y += random(-15, 15);
     
     w += random(-10, 10);
     h += random(-10, 10);
