@@ -3,7 +3,7 @@ flag flag2 = new flag(75, 150);
 flag flag3 = new flag(50, 240);
 flag flag4 = new flag(100, 90);
 flag flag5 = new flag(480, 120);
-flag flag6 = new flag(180, 30);
+flag flag6 = new flag(180, 440);
 flag flag7 = new flag(360, 30);
 flag flag8 = new flag(450, 480);
 flag flag9 = new flag(390, 420);
@@ -37,10 +37,11 @@ class flag
   
   void draw()
   {
-    fill(0);
+    fill(50, 75, 150);
     rect(pos_x, pos_y, w, h);
-    fill(255);
+    fill(random(0, 255), random(0, 250), random(0, 255));
     triangle(pos_x, pos_y, pos_x + 150, pos_y, pos_x + 150, pos_x + 40);
+    fill(random(0, 255), random(0, 255), random(0, 255));
     triangle(pos_x, pos_y + 75, pos_x + 150, pos_y + 75, pos_x + 150, pos_x + 40);
   }
 }
